@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeaderRail from "@/components/layout/HeaderRail";
+import Hero from "@/components/sections/Hero";
+import BeforeAfter from "@/components/sections/BeforeAfter";
+import Process from "@/components/sections/Process";
+import Projects from "@/components/sections/Projects";
+import Estimator from "@/components/sections/Estimator";
+import Testimonials from "@/components/sections/Testimonials";
+import Materials from "@/components/sections/Materials";
+import Contact from "@/components/sections/Contact";
+import Footer from "@/components/layout/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground">
+      <a href="#hero" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-background focus:ring-2 focus:ring-ring px-3 py-2 rounded-md">Skip to content</a>
+      <HeaderRail />
+      <main className="pt-16 md:pt-0 md:pr-[140px]">
+        <Hero />
+        <BeforeAfter />
+        <Process />
+        <Projects />
+        <Estimator />
+        <Testimonials />
+        <Materials />
+        <Contact />
+        <Footer />
+      </main>
     </div>
   );
 };
