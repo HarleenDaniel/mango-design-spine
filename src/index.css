@@ -135,4 +135,5 @@ All colors MUST be HSL.
   .shadow-elev-2 { box-shadow: var(--shadow-elev-2); }
   .writing-vertical { writing-mode: vertical-rl; transform: rotate(180deg); }
   .ease-system { transition-timing-function: var(--easing); }
+  .page { animation: fade-in 0.3s var(--easing) both; }
 }
