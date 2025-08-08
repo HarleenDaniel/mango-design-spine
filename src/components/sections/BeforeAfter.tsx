@@ -79,10 +79,10 @@ export const BeforeAfter = () => {
           }}
         >
           <img src={pair.before} alt={`${pair.label} before remodel`} className="absolute inset-0 size-full object-cover select-none" loading="lazy" />
-          <div className="absolute inset-0 transition-all duration-700 ease-[var(--easing)]" style={{ width: `${pos}%`, overflow: 'hidden' }} aria-hidden>
+          <div className="absolute inset-0 transition-all duration-700 ease-system" style={{ width: `${pos}%`, overflow: 'hidden' }} aria-hidden>
             <img src={pair.after} alt="" className="size-full object-cover" loading="lazy" />
           </div>
-          <div className="absolute inset-y-0 transition-all duration-700 ease-[var(--easing)]" style={{ left: `calc(${pos}% - 1px)` }} aria-hidden>
+          <div className="absolute inset-y-0 transition-all duration-700 ease-system" style={{ left: `calc(${pos}% - 1px)` }} aria-hidden>
             <div className="h-full w-0.5 bg-background/80 mix-blend-exclusion" />
           </div>
           <button

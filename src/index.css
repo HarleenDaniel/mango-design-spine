@@ -115,11 +115,24 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  .story-link {
-    @apply relative inline-block after:content-["" ] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  .story-link { position: relative; display: inline-block; }
+  .story-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(var(--primary));
+    transform-origin: bottom right;
+    transition: transform 300ms;
   }
+  .story-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+
   .hover-scale { @apply transition-transform duration-200 ease-in-out hover:scale-[1.03]; }
   .shadow-elev-1 { box-shadow: var(--shadow-elev-1); }
   .shadow-elev-2 { box-shadow: var(--shadow-elev-2); }
   .writing-vertical { writing-mode: vertical-rl; transform: rotate(180deg); }
+  .ease-system { transition-timing-function: var(--easing); }
 }
