@@ -117,7 +117,7 @@ export const BeforeAfter = () => {
             style={{ left: `calc(${pos}% - 18px)` }}
             data-handle
           >
-            <div className="h-9 w-9 rounded-full grid place-items-center bg-primary text-primary-foreground shadow-elev-2 transition-transform hover:scale-110 hover:shadow-elev-2 ring-0 hover:ring-2 hover:ring-primary/50">
+            <div className="h-9 w-9 rounded-full grid place-items-center bg-primary text-primary-foreground shadow-elev-2 transition-transform hover:scale-110 hover:shadow-elev-2 ring-0 hover:ring-2 hover:ring-primary/50 hover:animate-[pulse_1.6s_ease-in-out_infinite]">
               <span className="sr-only">Drag</span>
               <span aria-hidden>||</span>
             </div>

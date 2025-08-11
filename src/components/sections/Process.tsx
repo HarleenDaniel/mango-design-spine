@@ -1,6 +1,9 @@
 import type React from "react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const DreamIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" role="img" aria-label="Dream" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" data-draw {...props}>
@@ -30,7 +33,7 @@ export const Process = () => {
     const cards = el.querySelectorAll('.step-card');
     gsap.fromTo(cards, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.12, ease: "power2.out", scrollTrigger: {
       trigger: el, start: 'top 80%'
-    }} as any);
+    }});
   }, []);
   const steps = [
     { title: "Dream", desc: "We listen and define your vision, constraints, and budget.", Icon: DreamIcon },

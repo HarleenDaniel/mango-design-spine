@@ -25,26 +25,35 @@ export const HeaderRail = () => {
             <img src="/images/logo.png" alt="Mango Home Remodeling logo" className="h-12 w-auto" />
           </Link>
           <div className="flex items-center gap-2">
-            <Button variant="secondary" asChild>
-              <Link to="/projects">Portfolio</Link>
+            <Button variant="ghost" onClick={() => setOpen(true)} aria-label="Open menu">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                <path d="M3 6h18M3 12h18M3 18h18"/>
+              </svg>
             </Button>
-            <Button onClick={() => setOpen(true)}>Get Quote</Button>
+            <Button asChild>
+              <Link to="/contact">Get Quote</Link>
+            </Button>
           </div>
         </div>
         <Drawer open={open} onOpenChange={setOpen}>
           <DrawerContent className="animate-slide-in-right">
             <DrawerHeader>
-              <DrawerTitle>Book a Free Consultation</DrawerTitle>
+              <DrawerTitle>Menu</DrawerTitle>
             </DrawerHeader>
-            <div className="px-6 pb-8 text-sm text-muted-foreground">
-              <p className="mb-4">Tell us about your project and we’ll reach out within 24 hours.</p>
-              <form className="grid gap-3">
-                <input aria-label="Name" placeholder="Your name" className="h-11 rounded-md border bg-background px-3" />
-                <input aria-label="Email" placeholder="Email" type="email" className="h-11 rounded-md border bg-background px-3" />
-                <input aria-label="Phone" placeholder="Phone" className="h-11 rounded-md border bg-background px-3" />
-                <textarea aria-label="Project details" placeholder="Project details" className="min-h-28 rounded-md border bg-background p-3" />
-                <Button className="mt-1">Send Request</Button>
-              </form>
+            <div className="px-6 pb-8">
+              <nav className="grid gap-4 text-lg">
+                {navItems.map((n) => (
+                  <NavLink
+                    key={n.to}
+                    to={n.to}
+                    onClick={() => setOpen(false)}
+                    className={({ isActive }) => `underline-center ${isActive ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'}`}
+                    end
+                  >
+                    {n.label}
+                  </NavLink>
+                ))}
+              </nav>
             </div>
           </DrawerContent>
         </Drawer>
