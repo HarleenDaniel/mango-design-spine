@@ -7,9 +7,9 @@ const TestimonialsPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>Testimonials | Mango Remodel Company</title>
-        <meta name="description" content="Client reviews and testimonials for Mango Remodel Company's California remodeling projects." />
-        <link rel="canonical" href="/testimonials" />
+        <title>Testimonials | Mango Home Remodeling</title>
+        <meta name="description" content="Client reviews and testimonials for Mango Home Remodeling's California remodeling projects." />
+        <link rel="canonical" href="https://mangodesignbuild.com/testimonials" />
       </Helmet>
       <HeaderRail />
       <main className="page pt-16 md:pt-0 md:pr-[140px]">

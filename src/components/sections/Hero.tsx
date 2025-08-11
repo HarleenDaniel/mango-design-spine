@@ -25,11 +25,11 @@ export const Hero = () => {
       <div className="relative flex flex-col justify-center px-6 md:px-12 py-20 md:py-0">
         <span className="mb-4 inline-flex items-center text-xs tracking-widest uppercase text-muted-foreground">California Design-Build</span>
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] max-w-[12ch]">
-          <span className="sr-only">Mango Remodel Company — Design Build Live</span>
+          <span className="sr-only">Mango Home Remodeling — Design Build Live</span>
           <span className="block">{words[wordIndex]}</span>
         </h1>
         <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-prose">
-          California remodeling with precision and soul. Kitchens, baths, and whole-home transformations tailored to modern living.
+          California remodeling with precision and soul. Kitchens, baths, and whole-home transformations by Mango Home Remodeling.
         </p>
         <div className="mt-8 flex items-center gap-3">
           <Button asChild size="lg" className="hover-scale">

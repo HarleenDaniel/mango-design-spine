@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <title id="title">Deliver icon</title>
+  <path d="M3 16V8a2 2 0 0 1 2-2h9l4 4v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+  <path d="M14 6v4h4"/>
+  <circle cx="7.5" cy="17.5" r="1.5"/>
+  <circle cx="15.5" cy="17.5" r="1.5"/>
+</svg>

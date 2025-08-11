@@ -22,7 +22,7 @@ export const HeaderRail = () => {
       <header className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-4 py-3">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/images/logo.png" alt="Mango Remodel Company logo" className="h-12 w-auto" />
+            <img src="/images/logo.png" alt="Mango Home Remodeling logo" className="h-12 w-auto" />
           </Link>
           <div className="flex items-center gap-2">
             <Button variant="secondary" asChild>
@@ -55,7 +55,7 @@ export const HeaderRail = () => {
   return (
     <header className="fixed right-0 top-0 h-screen w-[160px] z-40 border-l bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/65 flex flex-col items-center py-6">
       <Link to="/" className="mb-8">
-        <img src="/images/logo.png" alt="Mango Remodel Company logo" className="h-20 w-auto" />
+        <img src="/images/logo.png" alt="Mango Home Remodeling logo" className="h-20 w-auto" />
       </Link>
       <nav aria-label="Primary" className="flex-1 flex flex-col items-center gap-5">
         {navItems.map((n) => (
@@ -63,7 +63,7 @@ export const HeaderRail = () => {
             key={n.to}
             to={n.to}
             className={({ isActive }) =>
-              `story-link text-sm transition-colors ${isActive ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'}`
+              `underline-center text-sm transition-colors ${isActive ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'}`
             }
             end
           >

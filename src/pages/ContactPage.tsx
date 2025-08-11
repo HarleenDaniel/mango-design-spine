@@ -7,9 +7,9 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>Contact | Mango Remodel Company</title>
-        <meta name="description" content="Contact Mango Remodel Company for a free consultation and project quote." />
-        <link rel="canonical" href="/contact" />
+        <title>Contact | Mango Home Remodeling</title>
+        <meta name="description" content="Contact Mango Home Remodeling for a free consultation and project quote." />
+        <link rel="canonical" href="https://mangodesignbuild.com/contact" />
       </Helmet>
       <HeaderRail />
       <main className="page pt-16 md:pt-0 md:pr-[140px]">

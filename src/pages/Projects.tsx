@@ -8,9 +8,9 @@ const ProjectsPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>Projects | Mango Remodel Company</title>
-        <meta name="description" content="Before and after remodels and a curated project gallery by Mango Remodel Company in California." />
-        <link rel="canonical" href="/projects" />
+        <title>Projects | Mango Home Remodeling</title>
+        <meta name="description" content="Before and after remodels and a curated project gallery by Mango Home Remodeling in California." />
+        <link rel="canonical" href="https://mangodesignbuild.com/projects" />
       </Helmet>
       <HeaderRail />
       <main className="page pt-16 md:pt-0 md:pr-[140px]">

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <title id="title">Design icon</title>
+  <path d="M3 7h14M3 12h10M3 17h6"/>
+  <rect x="2" y="4" width="16" height="16" rx="2" ry="2"/>
+  <path d="M17 8l4 4-8 8H9v-4l8-8z"/>
+</svg>

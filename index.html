@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mango Remodel Company | California Design-Build</title>
+    <title>Mango Home Remodeling | California Design-Build</title>
     <meta name="description" content="Premium, design-forward remodeling in California. Kitchens, baths, and whole-home renovations with precision and soul." />
-    <meta name="author" content="Mango Remodel Company" />
+    <meta name="author" content="Mango Home Remodeling" />
     <link rel="canonical" href="https://mangodesignbuild.com/" />
     <link rel="preload" as="image" href="/images/hero1.jpg" imagesrcset="/images/hero1.jpg 1200w, /images/hero2.jpg 1600w, /images/hero3.jpg 2000w" />
 
-    <meta property="og:title" content="Mango Remodel Company | California Design-Build" />
+    <meta property="og:title" content="Mango Home Remodeling | California Design-Build" />
     <meta property="og:description" content="Premium, design-forward remodeling in California. Kitchens, baths, and whole-home renovations." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/images/hero1.jpg" />
@@ -23,25 +23,43 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Mango Remodel Company",
+      "name": "Mango Home Remodeling",
       "url": "https://mangodesignbuild.com/",
       "image": ["/images/hero1.jpg", "/images/hero2.jpg"],
       "telephone": "+1-555-555-5555",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "1234 Market St",
-        "addressLocality": "San Francisco",
+        "addressLocality": "Milpitas",
         "addressRegion": "CA",
-        "postalCode": "94103",
+        "postalCode": "95035",
         "addressCountry": "US"
       },
-      "sameAs": [
-        "https://www.instagram.com/",
-        "https://www.linkedin.com/"
-      ],
       "priceRange": "$$$",
       "areaServed": "California"
     }
+    </script>
+    <script>
+      // Simple draw-on animation for inline SVGs marked with data-draw
+      (function(){
+        const els = document.querySelectorAll('[data-draw] path, [data-draw] circle, [data-draw] line, [data-draw] polyline');
+        els.forEach(el => {
+          const len = el.getTotalLength ? el.getTotalLength() : 200;
+          el.style.strokeDasharray = len;
+          el.style.strokeDashoffset = len;
+          el.style.transition = 'stroke-dashoffset 1s var(--easing)';
+        });
+        const io = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting){
+              entry.target.querySelectorAll('path, circle, line, polyline').forEach(p=>{
+                p.style.strokeDashoffset = 0;
+              });
+              io.unobserve(entry.target);
+            }
+          })
+        }, { threshold: 0.3 });
+        document.querySelectorAll('[data-draw]').forEach(el=>io.observe(el));
+      })();
     </script>
   </head>
 

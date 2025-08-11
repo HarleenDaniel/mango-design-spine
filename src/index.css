@@ -130,10 +130,31 @@ All colors MUST be HSL.
   }
   .story-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
 
+  /* New center-out underline */
+  .underline-center { position: relative; display: inline-block; }
+  .underline-center::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -2px; height: 2px;
+    background-color: hsl(var(--primary));
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 300ms var(--easing);
+  }
+  .underline-center:hover::after { transform: scaleX(1); }
+
   .hover-scale { @apply transition-transform duration-200 ease-in-out hover:scale-[1.03]; }
   .shadow-elev-1 { box-shadow: var(--shadow-elev-1); }
   .shadow-elev-2 { box-shadow: var(--shadow-elev-2); }
   .writing-vertical { writing-mode: vertical-rl; transform: rotate(180deg); }
   .ease-system { transition-timing-function: var(--easing); }
   .page { animation: fade-in 0.3s var(--easing) both; }
+
+  /* Glass card utility */
+  .glass-card { background: var(--glass); backdrop-filter: blur(10px); }
+
+  /* Hover tilt utility */
+  .tilt-on-hover { transform-style: preserve-3d; transition: transform .25s var(--easing), box-shadow .25s var(--easing); }
+  .tilt-on-hover:hover { transform: perspective(800px) rotateX(2deg) rotateY(-2deg) translateY(-2px); box-shadow: var(--shadow-elev-2); }
 }
+

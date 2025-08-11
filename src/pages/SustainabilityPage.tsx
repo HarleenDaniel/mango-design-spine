@@ -7,9 +7,9 @@ const SustainabilityPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>Sustainability & Materials | Mango Remodel Company</title>
-        <meta name="description" content="Eco-friendly materials and sustainable practices used by Mango Remodel Company across California." />
-        <link rel="canonical" href="/sustainability" />
+        <title>Sustainability & Materials | Mango Home Remodeling</title>
+        <meta name="description" content="Eco-friendly materials and sustainable practices used by Mango Home Remodeling across California." />
+        <link rel="canonical" href="https://mangodesignbuild.com/sustainability" />
       </Helmet>
       <HeaderRail />
       <main className="page pt-16 md:pt-0 md:pr-[140px]">

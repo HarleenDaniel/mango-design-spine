@@ -7,9 +7,9 @@ const ProcessPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Helmet>
-        <title>Our Process | Mango Remodel Company</title>
-        <meta name="description" content="Explore Mango Remodel Company's signature design-build process: Dream, Design, Deliver." />
-        <link rel="canonical" href="/process" />
+        <title>Our Process | Mango Home Remodeling</title>
+        <meta name="description" content="Explore Mango Home Remodeling's signature design-build process: Dream, Design, Deliver." />
+        <link rel="canonical" href="https://mangodesignbuild.com/process" />
       </Helmet>
       <HeaderRail />
       <main className="page pt-16 md:pt-0 md:pr-[140px]">
